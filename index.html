@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>David J. Ordaz-Rodriguez</title>
+  <style>
+    /* Do not show subsubsections in menu: */
+    
+    nav li li li {display: none !important; }
+    
+    nav {
+      display: inline-block;
+        text-align:center;
+      margin: 0px auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav ul {
+      padding: 0;
+      margin: 0 auto;
+    }
+    
+    nav a {
+      /* padding: 1rem; */
+      background: #111;
+      border-radius: 10px;
+    }
+    
+    nav li {
+      list-style: none;
+      position: relative;
+      float: left;
+    }
+    
+    nav a {
+      display: block;
+      width: 100px;
+    }
+    
+    nav ul ul {
+      padding: 0px;
+      margin: 0px;
+      position: absolute;
+      display: none;
+    }
+    
+    nav li:hover ul {
+      display: block;
+    }
+    
+    nav li:hover a {
+      background-color: #222;
+        padding: 1rem;
+    }
+    
+    nav li:hover a:hover {
+      background-color: #333;
+    }
+    
+    html {
+      margin-top: 2.5em;
+      padding-bottom: 20em;
+      font-size: 100%;
+      overflow-y: scroll;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+    ul.contact li {
+        margin: 0 0.5em !important;
+        width: 100%;
+        justify-content: start !important;
+    }
+    body {
+      border-radius: 20px;
+      font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+      font-size: 12px;
+      line-height: 1.7;
+      padding: .125em 1em 0.5em 1em;
+      margin: auto;
+      width: 1000px;
+      font-size: 16px;
+      color: #ddd;
+      background: black;
+    }
+    
+    a {
+        /* color: teal; */
+        color: aqua;
+    }
+    
+    a:hover {
+      color: lightblue;
+    }
+    
+    a:active {
+    }
+    
+    a:focus {
+      outline: thin dotted;
+    }
+    
+    *::-moz-selection {
+      background: rgba(255, 255, 0, 0.3);
+    }
+    
+    *::selection {
+      background: rgba(255, 255, 0, 0.3);
+    }
+    
+    a::-moz-selection {
+      background: rgba(255, 255, 0, 0.3);
+    }
+    
+    a::selection {
+      background: rgba(255, 255, 0, 0.3);
+    }
+    
+    p {
+      margin: 1em 0;
+    }
+    
+    img {
+      max-width: 100%;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      line-height: 100%;
+      font-weight: normal;
+    }
+    
+    h4, h5, h6 {
+      font-weight: bold;
+    }
+    
+    .title {
+      font-size: 3.5em;
+      text-align: center;
+    }
+    
+    h1 {
+      font-size: xx-large;
+      font-weight: bold;
+    }
+    
+    h1:after {
+      content: " ";
+      display: block;
+      border: 1px solid white;
+    }
+    
+    h2 {
+      font-size: x-large;
+    }
+    
+    h3 {
+      font-size: 1.5em;
+    }
+    
+    h4 {
+      font-size: 1.2em;
+    }
+    
+    h5 {
+      font-size: 1em;
+    }
+    
+    h6 {
+      font-size: 0.9em;
+    }
+    
+    blockquote {
+      margin: 0;
+      padding-left: 3em;
+      border-left: 0.5em #EEE solid;
+    }
+    
+    hr {
+      display: block;
+      height: 2px;
+      border: 0;
+      border-top: 1px solid #aaa;
+      border-bottom: 1px solid #eee;
+      margin: 1em 0;
+      padding: 0;
+    }
+    
+    pre, code, kbd, samp {
+      font-family: monospace, monospace;
+      _font-family: 'courier new', monospace;
+      font-size: 0.98em;
+    }
+    
+    pre {
+      white-space: pre;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+    
+    b, strong {
+      font-weight: bold;
+    }
+    
+    dfn {
+      font-style: italic;
+    }
+    
+    ins {
+      background: #ff9;
+      text-decoration: none;
+    }
+    
+    mark {
+      background: #ff0;
+      font-style: italic;
+      font-weight: bold;
+    }
+    
+    sub, sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline;
+    }
+    
+    sup {
+      top: -0.5em;
+    }
+    
+    sub {
+      bottom: -0.25em;
+    }
+    
+    ul, ol {
+      margin: 1em 0;
+      padding: 0 0 0 2em;
+    }
+    
+    li p:last-child {
+      margin-bottom: 0;
+    }
+    
+    ul ul, ol ol {
+      margin: .3em 0;
+    }
+    
+    dl {
+      padding: 0px;
+      margin: 0px;
+    }
+    
+    dd {
+        font-size: small;
+    }
+    
+    dl dd:last-of-type {
+      display: none;
+    }
+    
+    dl:hover dd:last-of-type {
+      display: block;
+    }
+    
+    ul li { list-style-type: none; } 
+    </style>
+  <style>
+    :root {
+      --main-bg-color: #4d4d4d;
+    }
+
+    * {
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 20px;
+      background-color: var(--main-bg-color);
+    }
+
+    body {
+      background-color: var(--main-bg-color);
+      background: unset !important;
+      min-width: 70%;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    .title::after {
+      margin-top: 25px;
+    }
+
+    ul.contact{ justify-content: center !important; align-items: center; display: inline-block; margin-left: 5em;}
+
+    nav#TOC {
+      justify-content: center;
+      display: flex;
+      align-items: center;
+    }
+
+    nav li {
+      position: relative;
+      min-width: 120px;
+    }
+
+    nav li a {
+      padding: 15px;
+      min-width: 120px;
+      background-color: #383838;
+      z-index: 99999;
+      display: block;
+      text-align: center;
+    }
+
+    nav ul li {
+      justify-content: space-between;
+      display: flex;
+      margin: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 25px;
+    }
+
+    nav ul ul {
+      position: absolute;
+      top: 100%;
+      padding: 15px;
+      left: 0;
+      display: none;
+      z-index: 99999; /* Adjust z-index for submenus */
+    }
+
+    nav li ul {
+      z-index: 9999999;
+    }
+
+    nav li:hover > ul {
+      display: block;
+    }
+
+    /* @media only screen and (max-width: 600px) {
+      nav#TOC {
+        flex-direction: column;
+      }
+
+      nav li {
+        width: 100%;
+        margin-bottom: 5px;
+      }
+
+      nav ul ul {
+        margin-top: 5px;
+      }
+    } */
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">David J. Ordaz-Rodriguez</h1>
+</header>
+<ul class="contact" style="display: flex; margin-top: -15px; margin-bottom: 35px; justify-content: center;">
+    <li><a href="https://dordazrodriguez.github.io/portfolio">Modern Portfolio</a></li>
+    <!-- <li>Phone: (225) 371-1811</li> -->
+    <li>Email: <a href="mailto:dordazrodriguez@gmail.com">dordazrodriguez@gmail.com</a></li>
+</ul>
+<nav id="TOC" role="doc-toc">
+  <ul>
+  <li><a href="#resume-info">Resume Info</a></li>
+  <li><a href="#skills">Skills</a>
+  <ul>
+  <li><a href="#linux-system-administration">Linux System Administration</a></li>
+  <li><a href="#virtualization">Virtualization</a></li>
+  <li><a href="#containers">Containers</a></li>
+  <li><a href="#servers">Servers</a></li>
+  <li><a href="#devops">DevOps</a></li>
+  <li><a href="#networking-virtual-and-physical">Networking (virtual and physical)</a></li>
+  <li><a href="#domain-administration">Domain Administration</a></li>
+  <li><a href="#data-analytics">Data Analytics</a></li>
+  <li><a href="#project-ownership">Project Ownership</a></li>
+  <li><a href="#research">Research</a></li>
+  <li><a href="#web-development">Web Development</a></li>
+  </ul></li>
+  <li><a href="#data-science">Data Science</a></li>
+  <li><a href="#technical-projects">Technical Projects</a>
+  <ul>
+  <li><a href="#homelab">Servers</a></li>
+  </ul></li>
+  <li><a href="#industry-experience">Industry Experience</a>
+  <ul>
+  <li><a href="#leadership-activies">Leadership Activies</a></li>
+  <li><a href="#it-and-web-consultation-freelancing">IT and Web Consultation / Freelancing</a></li>
+  <li><a href="#web-development-1">Web Development</a></li>
+  </ul></li>
+  <li><a href="#education-and-training">Education and Training</a></li>
+  <li><a href="#tools">Tools</a>
+  <ul>
+  <li><a href="#software-used">Technologies Used</a>
+  <ul>
+  <li><a href="#web-development-tools">Web Development Tools</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+
+
+<p><strong>Systems Engineer in Linux, virtualization, networking, containers, automation, and development.</strong></p>
+<!-- <h1 id="resume-info">Resume Info</h1>
+<p>This resume has been created in a <strong>dockerfile</strong> built by a <strong><a href="https://github.com/MarcusHoltz/resume-generator/blob/main/makefile">makefile</a></strong> and deployed using <strong><a href="https://github.com/MarcusHoltz/resume-generator/blob/main/.github/workflows/docker-image.yml">Github Actions’ CI/CD</a></strong>.</p>
+<ul>
+<li><ul>
+</ul></li> -->
+</ul>
+<h1 id="skills">Skills</h1>
+<h2 id="linux-system-administration">Linux System Administration</h2>
+<ul>
+<li>• Maintain a reliable and secure hybrid cloud environment for development and serving resources using tools such as SSH/tunneling, SSL, UDP hole punching, VPN, and single sign-on identity management.</li>
+<li>• Monitor and log: performance monitoring, network bandwidth usage, memory allocation, hard drive status, and application uptime using Glances, Netdata, Prometheus, Grafana, ELK stack, &amp; Diskover.</li>
+<li>• Cross-platform systems administration experience: Ability to install, configure, maintain, and document a variety of production-level Unix based systems: Debian, CentOS, Ubuntu, FreeBSD.</li>
+</ul>
+<h2 id="virtualization">Virtualization</h2>
+<ul>
+<li>• System virtualization platforms: Docker, QEMU, KVM - with virt-io’s 9p filesystem to increase io speed.</li>
+<li>• Created system templates for cloning, backing up, and restoring servers across multiple platforms and formats: CentOS, Ubuntu, FreeBSD, Debian in vmdk, vdi, vhdx, qcow2, &amp; raw filetypes.</li>
+</ul>
+<h2 id="containers">Containers</h2>
+<ul>
+<li>• Create, build, deploy containers using LXC/LXD and containerd using: docker, dockerfile, docker compose, docker networking, docker hub, github, github actions, proxmox.</li>
+<li>• Experience with distributed storage technologies like NFS, Ceph, S3 as well as dynamic resource management frameworks: Kubernetes, Docker Swarm.</li>
+</ul>
+<h2 id="servers">Servers</h2>
+<ul>
+<li>• Deployment and management of headless, bare metal servers in off site datacenter using the model:</li>
+<li>Debian image &gt; Proxmox baremetal &gt; isolated containers &gt; pfsense routing &gt; haproxy &gt; public internet</li>
+<li>• Configured and deployed ssl certificate management with reverse proxy, added SecurityOnion as an IDS within virtualized infrastructure with additional SPAN port to duplicate internal traffic.</li>
+</ul>
+<h2 id="devops">DevOps</h2>
+<ul>
+<li>• Knowledge of cloud infrastructure (AWS, Azure, GCP, Oracle) &amp; orchestration (Chef, Puppet, Ansible, SaltStack, Terraform, Helm, OpenStack).</li>
+<li>• Experience with the core AWS services, including ALB, ELB, EC2, RDS, and S3.</li>
+<li>• A proactive approach to spotting problems, areas for improvement, and performance bottlenecks.</li>
+</ul>
+<h2 id="networking-virtual-and-physical">Networking (virtual and physical)</h2>
+<ul>
+<li>• Documentation: Details with visuals of network infrastructure, system architecture, process, and policies.</li>
+<li>• Virtual Routing: Administered networking in virtualized environments, including virtualized edge routing with pfSense.</li>
+<li>• Technologies used: Linux, OpenVSwitch, SPAN port for SecurityOnion, VLAN segregation, DNS, BIND, VPNs, DNSoverTLS,</li>
+<li>• Installation of virtual network infrastructure using: VMware ESXi, Proxmox, Hyper-V, and Xen.</li>
+</ul>
+<h2 id="domain-administration">Domain Administration</h2>
+<ul>
+<li>• Active Directory, SCCM, Domain Trust, Domain Controller, FSMO roles, Active Director Replication, Group Policy, OpenLDAP, RADIUS</li>
+<li>• Identity Management and Single sign-on (SSO) (Kerberos, OAuth2, and OpenID Connect; Keycloak)</li>
+</ul>
+<h2 id="data-analytics">Data Analytics</h2>
+<ul>
+<li>• Created actionable reports weekly/monthly to customers and team members. Keeping them informed of how their efforts were going, what they should expect, allowing us to make data-driven decisions – all with visuals and detailed explinations.</li>
+<li>• Keep metrics of every varriety, to allow cross-referencal contrasts.</li>
+<li>• Love to set up A/B tests to see analytics and insights in action</li>
+</ul>
+<h2 id="project-ownership">Project Ownership</h2>
+<ul>
+<li>• I love to solve problems: Often taking the broad look to spot issues and inefficiencies from a mile away, backing them with suggested solutions, and personally implementing them.</li>
+<li>• Personal pride in my work to ensure that every customer has a great experience with what I build.</li>
+<li>• Work with many kinds of clients, in a wide variety of fields.</li>
+</ul>
+<h2 id="research">Research</h2>
+<ul>
+<li>• Able to find a solution through vendor documentation, question and answer websites, and related forums.</li>
+<li>• Excelent at researching client’s brands, industries, and markets to very quickly come up with a plan to fit their needs.</li>
+<li>• Experience architecting system layouts.</li>
+</ul>
+<h2 id="web-development">Web Development</h2>
+<ul>
+<li>• Designed and built custom website layout/user interfaces and custom backend software to meet project deadline/requirements.</li>
+<li>• Integrated data from various back-end services and databases:</li>
+<li><ul>
+<li>election data, employee database, interactive event map</li>
+</ul></li>
+<li>• Fixed broken installs, hacked sites, busted databases, and never-been-updated themes/plugins.</li>
+</ul>
+
+
+<h1 id="technical-projects">Technical Projects</h1>
+<h2 id="homelab">Homelab</h2>
+<p>Server features VLAN network segregation, 2 VMs, ~30 containers, and multi-tier snapshoting.</p>
+
+
+<h1 id="industry-experience">Industry Experience</h1>
+<h2 id="leadership-activies">Leadership Activies</h2>
+<p><strong>Software Freedom School, Littleton, CO</strong> - <strong>2022 - Present</strong></p>
+<ul>
+<li>• Software Freedom School board member since March 2023</li>
+<li>• Maintain open tickets for <a href="https://gitlab.com/sofreeus/sfs-sysops/-/boards">SysOps board</a></li>
+<li>• Presented at monthly community meetings</li>
+<li>• Team Member in weekly Linux study group</li>
+</ul>
+<h2 id="it-and-web-consultation-freelancing">IT and Web Consultation / Freelancing</h2>
+<p><strong>Holtzweb, Denver, CO</strong> - <strong>2019 - Present</strong></p>
+<ul>
+<li>• Established clients’ cloud based hosting environments, virtualization, and operations infrastructure.</li>
+<li>• Strategized SEO/SEM campaigns across web presence including blogs, email newsletters, ads &amp; promotions resulting in a 40% increase in face to face traffic and web traffic.</li>
+</ul>
+<h2 id="web-development-1">Web Development</h2>
+<p><strong>Highline Ideas, 1187, Mayer Networks, Carbondale, IL</strong> - <strong>2013 - 2017</strong></p>
+<ul>
+<li>• Created and designed custom website layout/user interfaces</li>
+<li>• Integrated data from various back-end services and databases</li>
+<li><ul>
+<li>election data, employee database, interactive event map</li>
+</ul></li>
+<li>• Worked directly with clients to facilitate business and marking needs</li>
+<li>• Executed tests, analyzed data to identify trends and insights using analytics tools and 3rd party optimization tools</li>
+<li>• Ensured all site development follows web standards and ADA compliance for accessibility.</li>
+<li>• Executed SEO-based initiatives, including website analytics and optimization.</li>
+<li>• Fixed broken installs, hacked sites, busted databases, and never-been-updated themes/plugins.</li>
+<li>• Repaired, updated, and redesigned new &amp; existing sites.</li>
+<li>• Designed custom website layout/user interfaces and custom backends to meet project deadline/requirements.</li>
+</ul>
+<h1 id="education-and-training">Education and Training</h1>
+<p><em>Bachelor of Science (BSc) in Computer Science</em> - Western Governors University</p>
+<p><em>Bachelor of Science (BSc) in Finance [Economics and Statistics]</em> - Louisiana State University</p>
+<h1 id="tools">Tools</h1>
+<h2 id="software-used">Technologies Used</h2>
+<p>Linux, bash scripting, Python, HTML, CSS, JavaScript, MySQL, Apache, Nginx, HAProxy, Traefik, Samba, Windows Server, Active Directory, GIT, VMWare vSphere, ESXi, libvert, QEMU, KVM, Xen, Hyper-V, Nagios, Docker, Vagrant, Ansible, Jenkins, Puppet, Chef, SaltStack, Helm, Kubernetes, Terraform, AWS, GCP, Oracle Cloud, Microsoft Azure, Private Cloud Hosting, Red Hat Linux (RHEL), CentOS, Debian, Ubuntu, OpenSUSE, Android, Adobe Photoshop</p>
+<h3 id="web-development-tools">Web Development Tools</h3>
+<ul>
+<li><p>• CMS: WordPress, Drupal, DNN, Joomla</p></li>
+<li><p>• SEO: Google Analytics, Piwik, MOZ, SEMRush, Megalytic</p></li>
+<li><p>• Design: Adobe Creative Cloud: After Effects, Illustrator, Photoshop</p></li>
+<li><p>• Webserver: Apache, Nginx, Traefik</p></li>
+<li><p>• Database: MySQL,Postgres, MariaDB, Redis, MongoDB</p></li>
+<li><p>• CSS Boilerplate: Bootstrap, Foundation, Tailwind</p></li>
+<li><p>• Cloud: Azure, AWS, DigitalOcean, Cloudflare</p></li>
+<li><p>• Virtulization: Docker, Kubernates
+</ul>
+</body>
+</html>
